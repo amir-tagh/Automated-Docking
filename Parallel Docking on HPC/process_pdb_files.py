@@ -1,3 +1,10 @@
+#####################################
+#AmirhosseinTaghavi              
+#UF Scripps
+#07/16/2023
+#manage the parallel processing of PDB\
+files using the multiprocessing module
+#####################################
 import os
 import glob
 import sys
