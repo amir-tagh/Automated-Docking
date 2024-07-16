@@ -1,3 +1,10 @@
+#####################################
+#AmirhosseinTaghavi              
+#UF Scripps
+#07/16/2023
+#####################################
+#add the missinh hydrogens with pymol
+#convert the pdb to pdbqt with obabel
 import os
 import subprocess
 from pymol import cmd, finish_launching, CmdException
