@@ -48,7 +48,7 @@ def add_hydrogens_to_pdbs(pdb_dir, output_dir):
 
 
 # Define the directory containing the PDB files
-pdb_dir = "/home/amir/Projects/DOCKING-OF-HARIBOSS-AI-COLLABORATION/HARIBOSS-PDB-NEW/hariboss_pdb/rna"
-output_dir = "/home/amir/Projects/DOCKING-OF-HARIBOSS-AI-COLLABORATION/HARIBOSS-PDB-NEW/hariboss_pdb/rna_added_H"
+pdb_dir = "/add/path/here"
+output_dir = "/add/path/here"
 
 add_hydrogens_to_pdbs(pdb_dir, output_dir)
