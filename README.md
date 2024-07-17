@@ -1,4 +1,4 @@
-Explanations:
+Explanations:\
 a series of scripts to prepare the small molecule and RNA for docking
 Python Script: The Python script add_hydrogens_and_convert.py takes two command-line arguments: the input directory containing PDB files and the output directory where the processed files will be saved.
 It processes each PDB file, adds hydrogens, and converts it to the PDBQT format using OpenBabel.
