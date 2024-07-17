@@ -11,7 +11,7 @@ The job is submitted to the HPC scheduler with sbatch submit_job.sh, which sched
 smiles_to_umap_hdbscan.py\
 
 HDBSCAN Clustering:\
-
+python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png
 After obtaining the UMAP embeddings, we apply HDBSCAN clustering with hdbscan.HDBSCAN(min_cluster_size=5).\
 You can adjust the min_cluster_size parameter based on your specific dataset and clustering needs.\
 Plotting with Clusters:\
@@ -26,3 +26,19 @@ Running the Script:\
 Prepare your SMILES file:\
 Create a tab-separated text file (e.g., smiles.tsv) where the first column contains the SMILES strings.\
 python smiles_to_umap_hdbscan.py smiles.tsv umap_hdbscan_plot.png\
+
+smiles_to_umap_hdbscan_centers.py\
+Explanations:\
+Store Molecule Objects:\
+The smiles_to_fingerprints function now returns both the fingerprints and the corresponding RDKit molecule objects.\
+Identify and Plot Cluster Centers:\
+In plot_umap_with_clusters, after performing UMAP and HDBSCAN, the script identifies cluster centers by averaging the points in each cluster.\
+For each cluster, the center coordinates and a representative molecule are identified.\
+The molecule images are overlaid on the UMAP plot at the cluster center coordinates.\
+Overlay Molecule Images:\
+RDKit's Draw.MolToImage function is used to generate images of the molecules, which are then overlaid on the UMAP plot using plt.imshow.\
+Running the Script\
+Prepare your SMILES file:\
+Create a tab-separated text file (e.g., smiles.tsv) where the first column contains the SMILES strings.\
+Run the script:\
+python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png\
