@@ -42,3 +42,15 @@ Prepare your SMILES file:\
 Create a tab-separated text file (e.g., smiles.tsv) where the first column contains the SMILES strings.\
 Run the script:\
 python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png\
+
+Script: umap_kmeans.py\
+Replace your_input_file.tsv with the path to your tab-separated file containing SMILES strings, and 5 with the number of clusters you want for the K-means algorithm.
+
+Explanation
+Reading SMILES: The script reads SMILES strings from a tab-separated input file.\
+Converting to Molecules: The SMILES strings are converted to RDKit molecule objects.\
+Computing UMAP Embedding: UMAP is used to reduce the dimensionality of the molecular fingerprints.\
+Applying K-means: The UMAP embeddings are clustered using K-means.\
+python umap_kmeans.py your_input_file.tsv [# of clusters]\
+
+
