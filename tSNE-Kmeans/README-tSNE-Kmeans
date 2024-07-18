@@ -1,0 +1,12 @@
+Explanation:
+t-SNE: Uses the t-SNE algorithm from sklearn.manifold.TSNE for dimensionality reduction.
+K-means: Applies K-means clustering on the t-SNE embedding.
+SMILES of Cluster Centers: Saves the SMILES strings of the cluster centers to a separate file.
+Plotting: Creates a t-SNE plot with cluster numbers embedded in the figure.
+Running the Script:
+To run the script, execute it with the following command:
+python script.py input_data_file.tsv 5 output_tsne_with_clusters.png output_cluster_centers_smiles.
+Replace input_data_file.tsv with the path to your input data file containing SMILES strings, 5\
+with the number of clusters you want for K-means clustering, output_tsne_with_clusters.png\
+with the desired name for the output t-SNE plot with cluster centers, and output_cluster_centers_smiles.txt\
+with the desired name for the output file containing SMILES of cluster centers.
