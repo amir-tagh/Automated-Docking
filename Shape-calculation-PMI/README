@@ -1,0 +1,14 @@
+#explanation
+#Amirhossein Taghavi
+UF Scripps
+07/20/2024
+
+Convert SMILES to SDF: The script converts SMILES to SDF files in parallel using Open Babel and saves them in the sdf_files directory.
+Apply GAFF Force Field: It applies the GAFF force field to these SDF files.
+Calculate NPRs: The script calculates NPR1 and NPR2 for each molecule.
+Plot NPRs: It plots NPR1 vs NPR2 using Matplotlib.
+The SDF files generated during the process are saved in the sdf_files directory for further analysis or reference.
+Run the Script:
+Execute the script with your input file:
+
+python parallel_npr.py path/to/your/input_file.tsv --num_cpus [#]
