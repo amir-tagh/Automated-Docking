@@ -1,3 +1,12 @@
+###########################################################################################################################################
+Amirhossein Taghavi
+07/20/2024
+#Convert SMILES to SDF: The script converts SMILES to SDF files in parallel using Open Babel and saves them in the sdf_files directory.
+#Apply GAFF Force Field: It applies the GAFF force field to these SDF files.
+#Calculate NPRs: The script calculates NPR1 and NPR2 for each molecule.
+#Plot NPRs: It plots NPR1 vs NPR2 using Matplotlib.
+###########################################################################################################################################
+
 import subprocess
 from rdkit import Chem
 from rdkit.Chem import AllChem
