@@ -1,0 +1,29 @@
+Script Details:
+File Handling:
+
+The script reads the specified .mol2 file line by line.
+It increments a counter every time it encounters the @<TRIPOS>MOLECULE delimiter, which indicates the start of a new structure.
+Arguments:
+
+mol2_file: Path to the .mol2 file to be analyzed.
+Output:
+
+The script outputs the number of structures found in the specified .mol2 file.
+Script Details:
+File Handling:
+
+The script reads all .mol2 files in the specified directory.
+It sorts the .mol2 files alphabetically.
+It creates a subdirectory named combined in the input directory to save the combined files.
+Combining Files:
+
+The script combines structures from multiple .mol2 files into chunks of the specified size (default is 30,000).
+Each combined file is named sequentially as combined_001.mol2, combined_002.mol2, etc.
+Opens a new output file when the current combined file reaches the specified structure count.
+Arguments:
+
+input_dir: Path to the directory containing .mol2 files.
+chunk_size: Optional argument to specify the number of structures per combined file.
+This script ensures that the resulting .mol2 files contain a maximum of 30,000 structures each, combining from all available .mol2 files in the specified directory. Adjust the chunk_size argument as needed to fit your specific requirements.
+Run the script:
+python combine_mol2_structures.py /path/to/mol2/files --chunk_size 30000
