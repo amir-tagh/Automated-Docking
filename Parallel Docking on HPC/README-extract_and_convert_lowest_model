@@ -1,0 +1,14 @@
+Explanation of Changes
+Extract the Lowest Energy Model Only:
+
+The script now only keeps track of the lowest energy model and saves that one model to a PDBQT file.
+Save the Lowest Energy Model:
+
+The extract_lowest_energy_model function has been updated to only save the model with the lowest energy.
+File Naming:
+
+The PDBQT and PDB files are saved with a fixed name lowest_energy_model to reflect the lowest energy model.
+Running the Script
+Save the updated script as extract_and_convert_lowest_model.py and execute it:
+python extract_and_convert_lowest_model.py docking_results.dlg output_directory
+This command will extract the lowest energy model from the docking_results.dlg file, save it as lowest_energy_model.pdbqt in the output_directory, and then convert it to lowest_energy_model.pdb.
