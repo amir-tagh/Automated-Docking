@@ -1,3 +1,12 @@
+#######################
+#scripts extracts the mol2 files from the Dock 6.0 output\
+#based on a threshold set by Grid Score\
+#plots the histogram of score distribution\
+#Amirhossein Taghavi
+#UF Scripps
+#07/24/2024
+
+
 import re
 import matplotlib.pyplot as plt
 
