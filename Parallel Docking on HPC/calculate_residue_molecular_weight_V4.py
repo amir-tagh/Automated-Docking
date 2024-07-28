@@ -1,4 +1,7 @@
 ############################################################################
+#script extracts nonstandard residues from a pdb file and calculated the\
+#molecular weight with RDkit. These residues can later be replaced with standard\
+#residues with close MW.
 #Standard Residues Embedded: The list of standard residues is embedded\
 #in the script under the main function. updare as required.
 #Amirhossein Taghavi
