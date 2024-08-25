@@ -1,4 +1,4 @@
-# Explanations:\
+# Explanations:
 a series of scripts to prepare the small molecule and RNA for docking\
 Python Script: The Python script add_hydrogens_and_convert.py\
 takes two command-line arguments: the input directory containing PDB files and the output directory where the processed files will be saved.\
@@ -10,7 +10,7 @@ Submission:\
 The job is submitted to the HPC scheduler with sbatch submit_job.sh, which schedules and runs the job on the available compute nodes.\
 smiles_to_umap_hdbscan.py\
 
-# HDBSCAN Clustering:\
+# HDBSCAN Clustering:
 python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png
 After obtaining the UMAP embeddings, we apply HDBSCAN clustering with hdbscan.HDBSCAN(min_cluster_size=5).\
 You can adjust the min_cluster_size parameter based on your specific dataset and clustering needs.\
@@ -28,7 +28,7 @@ Create a tab-separated text file (e.g., smiles.tsv) where the first column conta
 python smiles_to_umap_hdbscan.py smiles.tsv umap_hdbscan_plot.png\
 
 # smiles_to_umap_hdbscan_centers.py
-## Explanations:\
+## Explanations:
 Store Molecule Objects:\
 The smiles_to_fingerprints function now returns both the fingerprints and the corresponding RDKit molecule objects.\
 Identify and Plot Cluster Centers:\
