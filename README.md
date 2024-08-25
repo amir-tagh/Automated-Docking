@@ -1,4 +1,4 @@
-Explanations:\
+# Explanations:\
 a series of scripts to prepare the small molecule and RNA for docking\
 Python Script: The Python script add_hydrogens_and_convert.py\
 takes two command-line arguments: the input directory containing PDB files and the output directory where the processed files will be saved.\
@@ -10,7 +10,7 @@ Submission:\
 The job is submitted to the HPC scheduler with sbatch submit_job.sh, which schedules and runs the job on the available compute nodes.\
 smiles_to_umap_hdbscan.py\
 
-HDBSCAN Clustering:\
+# HDBSCAN Clustering:\
 python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png
 After obtaining the UMAP embeddings, we apply HDBSCAN clustering with hdbscan.HDBSCAN(min_cluster_size=5).\
 You can adjust the min_cluster_size parameter based on your specific dataset and clustering needs.\
@@ -27,8 +27,8 @@ Prepare your SMILES file:\
 Create a tab-separated text file (e.g., smiles.tsv) where the first column contains the SMILES strings.\
 python smiles_to_umap_hdbscan.py smiles.tsv umap_hdbscan_plot.png\
 
-smiles_to_umap_hdbscan_centers.py\
-Explanations:\
+# smiles_to_umap_hdbscan_centers.py
+## Explanations:\
 Store Molecule Objects:\
 The smiles_to_fingerprints function now returns both the fingerprints and the corresponding RDKit molecule objects.\
 Identify and Plot Cluster Centers:\
@@ -43,7 +43,7 @@ Create a tab-separated text file (e.g., smiles.tsv) where the first column conta
 Run the script:\
 python smiles_to_umap_hdbscan_centers.py smiles.tsv umap_hdbscan_centers_plot.png\
 
-Script: umap_kmeans.py\
+# Script: umap_kmeans.py
 Replace your_input_file.tsv with the path to your tab-separated file containing SMILES strings, and 5 with the number of clusters you want for the K-means algorithm.
 
 Explanation
